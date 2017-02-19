@@ -1,0 +1,24 @@
+.logo {
+	position: relative;
+	margin-top: 15px;
+	&__link {
+		display: inline-block;
+		text-decoration: none;
+		color: #fff;
+		text-align: center;
+		.logo__img {
+			float: left;
+			max-width: 50px;
+			max-height: 50px;
+		}
+		.logo__title {
+			display: block;
+			line-height: 16px;
+			padding-top: 9px;
+			margin-left: 55px;
+			@media only screen and (max-width: 400px) {
+				display: none;
+			}
+		}
+	}
+}

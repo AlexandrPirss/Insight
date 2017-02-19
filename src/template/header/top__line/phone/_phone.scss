@@ -1,0 +1,32 @@
+.phone__wrap {
+	position: relative;
+	margin-top: 10px;
+	@import "btn/_btn.scss";
+	.toggle__menu {
+		display: none;
+		cursor: pointer;
+		@media only screen and (max-width: 1200px) {
+			display: block;
+		}
+	}
+	.phone__list {
+		display: block;
+		@media only screen and (max-width: 1200px) {
+			padding-right: 50px;
+		}
+		.phone__item {
+			display: block;
+			text-align: right;
+			line-height: 20px;
+			.phone__link {
+				color: #fff;
+				text-decoration: none;
+				@extend .trans;
+				&:hover {
+					color: $main-color;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}

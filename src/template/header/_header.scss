@@ -1,0 +1,20 @@
+.header {
+	position: relative;
+	min-height: 620px;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	padding-bottom: 120px;
+	&:before {
+		background-color: #000;
+		opacity: .60;
+		content: '';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	@import "top__line/_top__line.scss";
+	@import "header__wrap/_header__wrap.scss";
+}

@@ -1,0 +1,16 @@
+.top__line {
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	z-index: 100;
+	@import "logo/_logo.scss";
+	@import "phone/_phone.scss";
+	@import "main__menu/_main__menu.scss";
+}
+.default {
+	
+}
+.fixed {
+	background-color: rgba(0,24,40,.9);
+}
+

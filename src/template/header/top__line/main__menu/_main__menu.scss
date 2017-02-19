@@ -1,0 +1,62 @@
+.main__menu {
+	position: relative;
+	margin-top: 30px;
+	@media only screen and (max-width: 1200px) {
+		display: none;
+		position: relative;
+		min-width: 290px;
+		margin-top: 10px;
+		float: right;
+		background-color: rgba(0,24,40,.9);
+	}
+	@media only screen and (max-width: 400px) {
+		margin-top: 9px;
+	}
+	@media only screen and (min-width: 1200px) {
+		display: block!important;
+	}
+	.menu__list {
+		display: block;
+		text-align: right;
+		@media only screen and (max-width: 1200px) {
+			display: table;
+			width: 100%;
+			float: right;
+			text-align: right;
+		}
+		.menu__item {
+			display: inline-block;
+			padding: 0px 10px;
+			text-transform: uppercase;
+			&.active {
+				.menu__link {
+					text-decoration: underline;
+					color: $main-color;
+				}
+			}
+			@media only screen and (max-width: 1200px) {
+				padding: 0;
+				display: block;
+			}
+			.menu__link {
+				color: #fff;
+				text-decoration: none;
+				font-size: 14px;
+				@extend .trans;
+				&:hover {
+					text-decoration: underline;
+					color: $main-color;
+				}
+				@media only screen and (max-width: 1200px) {
+					display: block;
+					line-height: 48px;
+					padding-left: 20px;
+					padding-right: 50px;
+					&:hover {
+						background-color: #273646;
+					}
+				}
+			}
+		}
+	}
+}
