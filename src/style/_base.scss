@@ -30,8 +30,10 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	overflow-x: hidden;
 	color: #fff;
-	height: 5000px;
-	background-color: #fff;
+	background-color: #f1f1f1;
+}
+.white {
+	color: #fff;
 }
 .trans {
 	transition: all .5s ease;
@@ -64,13 +66,23 @@ body {
 	}
 }
 .btn__yellow {
-	background: yellow;
-	border: 1px solid yellow;
+	background: $yellow-color;
+	border: 1px solid $yellow-color;
 	color: #fff;
 	@extend .trans;
 	&:hover {
-		color: yellow;
+		color: $yellow-color;
 		background:none;
+	}
+}
+
+.section__top {
+	h1 {
+		position: relative;
+		text-align: center;
+		color: #000;
+		font-size: 38px;
+		letter-spacing: 3px;
 	}
 }
 /* Small Devices, Tablets */

@@ -1,0 +1,18 @@
+.contact {
+	position: relative;
+	width: 100%;
+	padding: 50px 0px;
+	background-color: $main-color;
+	.contact__item {
+		text-align: center;
+		.fa {
+			font-size: 80px;
+			margin-bottom: 15px;
+		}
+		ul {
+			li {
+				letter-spacing: 1px;
+			}
+		}
+	}
+}

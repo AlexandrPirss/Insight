@@ -15,3 +15,60 @@
 @import "animate.css";
 
 @import "../template/header/_header.scss";
+@import "../template/vacancy/__vacancy.scss";
+@import "../template/work/_work.scss";
+@import "../template/about/_about.scss";
+@import "../template/reviews/_reviews.scss";	
+@import "../template/contact/_contact.scss";	
+@import "../template/footer/_footer.scss";	
+
+
+.fixed_callback {
+    position: fixed;
+    z-index: 100;
+    right: 20px;
+    bottom: 20px;
+    &__link {
+        display: block;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color:$main-color;
+        text-align: center;
+				-webkit-animation: pulse .5s infinite;
+				animation: pulse .5s infinite;
+        .fa {
+            line-height: 70px;
+            color: #fff;
+            font-size: 30px;					
+        }
+    }
+}
+
+.fixed__social {
+    position: fixed;
+    width: 40px;
+    height: 120px;
+    z-index: 100;
+    top: 300px;
+    &__link {
+        display: block;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        .fa {
+            color:#fff;
+            line-height: 40px;
+            font-size: 20px;
+        }
+    }
+    .facebook {
+			background-color: #3b5998;
+		}
+		.youtube {
+			background-color: #e62117;
+		}
+		.vk {
+			background-color: #597DA3;
+		}
+}

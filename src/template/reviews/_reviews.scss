@@ -1,0 +1,44 @@
+.reviews {
+	position: relative;
+	padding: 50px 0px;
+	width: 100%;
+	z-index: 1;
+	background-image: url("../img/bg_reviews.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+	&:before {
+		position: absolute;
+		background: rgba(0,24,40,.9);
+		content: '';
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: -1;
+	}
+	@import "comment/_comment.scss";
+	.video__wrap {
+		position: relative;
+		width: 651px;
+		height: 469px;
+		background-image: url("../img/ipad.png");
+		background-position: center left;
+		padding-top: 40px;
+		padding-left: 46px;
+		.btn__video {
+			position: absolute;
+			left: 250px;
+			top: 170px;
+			display: block;
+			.fa {
+				font-size: 70px;
+				color: rgba(255,255,255,.7);
+				@extend .trans;
+				&:hover {
+					color: $main-color;
+				}
+			}
+		}
+	}
+}
